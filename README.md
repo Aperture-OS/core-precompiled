@@ -18,3 +18,11 @@ For other informations please follow the instructions in [CONTRIBUTING.md](https
 
 **&copy; Copyright Aperture OS 2025-2026**
 **All Rights Reserved.**
+
+## Contributors ❤️
+
+Massive thank you to:
+
+<a href="https://github.com/Aperture-OS/core-precompiled/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Aperture-OS/core-precompiled" />
+</a>
