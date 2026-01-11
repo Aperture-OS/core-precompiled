@@ -26,3 +26,5 @@ Massive thank you to:
 <a href="https://github.com/Aperture-OS/core-precompiled/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=Aperture-OS/core-precompiled" />
 </a>
+
+Made with [contrib.rocks](https://contrib.rocks).
