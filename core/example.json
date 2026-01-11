@@ -1,0 +1,37 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "release": 1768153997,
+  "description": "Package is a package.",
+  "author": "example.com",
+  "license": "MIT",
+  "source": {
+    "url": "https://example.com/package.tar.gz", // REMOVE ME: put precompiled package archives in /packages/name.extension (assuming the root to be the root of repository)
+    "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d",
+    "type": "tar.gz"
+  },
+  "dependencies": {
+    "dependency1": ">=1.0.0",
+	"dependency2": ">=1.0.0"
+  },
+  "opt_dependencies": [
+    {
+      "id": 1,
+      "description": "This gets shown in the optional dependency resolution for group id: 1.",
+      "options": [
+        "opt-dep1",
+		"opt-dep2",
+      ]
+    }
+  ],
+
+  "build": {
+    "kind": "preCompiled",
+    "env": {
+      "MAKEFLAGS": "-j$(nproc)"
+    },
+    "prepare": ["# patches, Clean previous builds, Prepare directories, etc. goes here"],
+    "install": ["make install PREFIX=${PREFIX:-/usr/local}"],
+    "uninstall": ["make uninstall PREFIX=${PREFIX:-/usr/local}"]
+  }
+}
